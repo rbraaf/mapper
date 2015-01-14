@@ -42,7 +42,13 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  # Use faker to populate development database
-  gem 'faker'
+# Gems used to generate test data - development only
+  group :developement do
+    # Use populator to populate fields
+    gem 'populator'
+
+    # Use faker to populate development database
+    gem 'faker'
+  end
 end
 
