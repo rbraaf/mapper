@@ -12,21 +12,20 @@
       <th>State</th>
       <th>Zip</th>
       <th>Map link</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @organizations.each do |organization| %>
       <tr>
-        <td><%= organization.organization_name %></td>
+        <td><%= link_to organization.organization_name, organization %></td>
         <td><%= organization.address_line1 %></td>
         <td><%= organization.address_line2 %></td>
         <td><%= organization.city %></td>
         <td><%= organization.state %></td>
         <td><%= organization.zip %></td>
         <td><%= link_to "Map it!", "http://maps.google.com/maps?z=12&t=m&q=loc:#{organization.latitude}+#{organization.longitude}", target: :blank %></td>
-        <td><%= link_to 'Show', organization %></td>
+        <td><%# link_to 'Show', organization %></td>
         <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
         <td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

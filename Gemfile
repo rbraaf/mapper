@@ -53,5 +53,8 @@ group :development, :test do
 
   # Use Geocoder to determine location of organization
   gem 'geocoder'
+
+  # Use for deploying to Heroku
+  gem 'rails_12factor'
 end
 
