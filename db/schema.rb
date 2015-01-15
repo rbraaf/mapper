@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150114201349) do
+ActiveRecord::Schema.define(version: 20150114223711) do
 
   create_table "organizations", force: :cascade do |t|
     t.string   "organization_name"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20150114201349) do
     t.string   "map_link"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
 end

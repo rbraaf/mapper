@@ -11,7 +11,6 @@ namespace :db do
         org.city  = Faker::Address.city
         org.state   = Faker::Address.state
         org.zip   = Faker::Address.zip
-        org.map_link  = Faker::Internet.domain_name
     end
     puts "All done"
   end

@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>Organization name</th>
-      <th>Address line1</th>
-      <th>Address line2</th>
+      <th>Address line 1</th>
+      <th>Address line 2</th>
       <th>City</th>
       <th>State</th>
       <th>Zip</th>
@@ -25,7 +25,7 @@
         <td><%= organization.city %></td>
         <td><%= organization.state %></td>
         <td><%= organization.zip %></td>
-        <td><%= organization.map_link %></td>
+        <td><%= link_to "Map it!", "http://maps.google.com/maps?z=12&t=m&q=loc:#{organization.latitude}+#{organization.longitude}", target: :blank %></td>
         <td><%= link_to 'Show', organization %></td>
         <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
         <td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
