@@ -31,8 +31,13 @@
 </p>
 
 <p>
-  <strong>Map link:</strong>
-  <%= @organization.map_link %>
+  <strong>Map link:</strong><br />
+  <iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAmflxW33R8NRh2ynV70jtyOZeV543pYKA&q=<%= "#{@organization.latitude}+#{@organization.longitude}" %>">
+  </iframe>
 </p>
 
 <%= link_to 'Edit', edit_organization_path(@organization) %> |
