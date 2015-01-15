@@ -54,7 +54,13 @@ group :development, :test do
   # Use Geocoder to determine location of organization
   gem 'geocoder'
 
-  # Use for deploying to Heroku
-  gem 'rails_12factor'
+  # Gems used for production environment
+    group :production do
+      # Use for deploying to Heroku
+      gem 'rails_12factor'
+
+      # Use PG database
+      gem 'pg'
+    end
 end
 
