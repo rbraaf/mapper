@@ -6,3 +6,5 @@ Additional gems (development only):
   - faker
 
 ## This app is designed to automatically pull in an address and generate a google maps link ##
+
+#Adding this for testing purposes
