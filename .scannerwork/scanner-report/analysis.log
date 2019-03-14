@@ -1,0 +1,35 @@
+SonarQube plugins:
+  - SonarPython 1.11.0.2473 (python)
+  - SonarCSS 1.0.3.724 (cssfamily)
+  - JaCoCo 1.0.1.143 (jacoco)
+  - SonarGo 1.1.0.1612 (go)
+  - SonarKotlin 1.4.0.155 (kotlin)
+  - Svn 1.9.0.1295 (scmsvn)
+  - SonarJS 5.0.0.6962 (javascript)
+  - SonarRuby 1.4.0.155 (ruby)
+  - SonarScala 1.4.0.155 (sonarscala)
+  - SonarC# 7.10.0.7896 (csharp)
+  - SonarJava 5.10.1.16922 (java)
+  - LDAP 2.2.0.608 (ldap)
+  - SonarHTML 3.1.0.1615 (web)
+  - Git 1.7.0.1491 (scmgit)
+  - SonarFlex 2.4.0.1222 (flex)
+  - SonarXML 2.0.1.2020 (xml)
+  - SonarPHP 2.16.0.4355 (php)
+  - SonarTS 1.9.0.3766 (typescript)
+  - SonarVB 7.10.0.7896 (vbnet)
+Global server settings:
+  - sonar.core.id=86E1FA4D-AWlKYbMqMtKyW6IlBAEf
+  - sonar.core.startTime=2019-03-14T11:06:51-0400
+Project server settings:
+Project scanner properties:
+  - sonar.host.url=http://192.168.0.51:9000
+  - sonar.projectBaseDir=/tmp/mapper
+  - sonar.projectKey=org.mdlive:mapper-test
+  - sonar.projectName=Mapper Test
+  - sonar.projectVersion=1.0
+  - sonar.scanner.app=ScannerCli
+  - sonar.scanner.appVersion=3.3.0.1492
+  - sonar.sourceEncoding=UTF-8
+  - sonar.sources=.
+  - sonar.working.directory=/tmp/mapper/.scannerwork
